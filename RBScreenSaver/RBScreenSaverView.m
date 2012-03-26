@@ -2,51 +2,28 @@
 //  RBScreenSaverView.m
 //  RBScreenSaver
 //
-//  Created by Mateus Armando on 26.03.12.
-//  Copyright (c) 2012 Sean Coorp. INC. All rights reserved.
+//  Created by Sean Mateus on 26.03.12.
 //
+#import <Cocoa/Cocoa.h>
+#import <ScreenSaver/ScreenSaverView.h>
+#import <MacRuby/MacRuby.h>
 
-#import "RBScreenSaverView.h"
+@interface RBScreenSaverView : ScreenSaverView
+@end
 
 @implementation RBScreenSaverView
-
-- (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
++ (void) initialize
 {
-    self = [super initWithFrame:frame isPreview:isPreview];
-    if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+    static int initialized = 0;
+    if (!initialized) {
+        initialized = 1;
+        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+        NSBundle *bundle = [NSBundle bundleForClass:self];
+        NSString *main_path = [bundle pathForResource:@"RBScreenSaverView" ofType:@"rb"];
+        if (main_path) {
+            [[MacRuby sharedRuntime] evaluateFileAtPath:main_path];
+        }
+        [pool release];
     }
-    return self;
 }
-
-- (void)startAnimation
-{
-    [super startAnimation];
-}
-
-- (void)stopAnimation
-{
-    [super stopAnimation];
-}
-
-- (void)drawRect:(NSRect)rect
-{
-    [super drawRect:rect];
-}
-
-- (void)animateOneFrame
-{
-    return;
-}
-
-- (BOOL)hasConfigureSheet
-{
-    return NO;
-}
-
-- (NSWindow*)configureSheet
-{
-    return nil;
-}
-
 @end

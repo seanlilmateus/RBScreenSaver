@@ -11,6 +11,10 @@
 		4F6EE43F15204CD6005AE064 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6EE43E15204CD6005AE064 /* ScreenSaver.framework */; };
 		4F6EE44915204CD6005AE064 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F6EE44715204CD6005AE064 /* InfoPlist.strings */; };
 		4F6EE44D15204CD6005AE064 /* RBScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EE44C15204CD6005AE064 /* RBScreenSaverView.m */; };
+		4F6EE45415204DE3005AE064 /* RBScreenSaverView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4F6EE45315204DE3005AE064 /* RBScreenSaverView.rb */; };
+		4F6EE45715205069005AE064 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6EE45515205051005AE064 /* MacRuby.framework */; };
+		4F6EE48315206673005AE064 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F6EE48215206673005AE064 /* README.md */; };
+		4F6EE48715206BC2005AE064 /* rbscreensaver.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4F6EE48615206BC2005AE064 /* rbscreensaver.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +24,14 @@
 		4F6EE44115204CD6005AE064 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4F6EE44215204CD6005AE064 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4F6EE44315204CD6005AE064 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4F6EE44615204CD6005AE064 /* RBScreenSaver-Info.plist */ = {isa = PBXFileReference; path = "RBScreenSaver-Info.plist"; sourceTree = "<group>"; };
+		4F6EE44615204CD6005AE064 /* RBScreenSaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBScreenSaver-Info.plist"; sourceTree = "<group>"; };
 		4F6EE44815204CD6005AE064 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4F6EE44A15204CD6005AE064 /* RBScreenSaver-Prefix.pch */ = {isa = PBXFileReference; path = "RBScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
-		4F6EE44B15204CD6005AE064 /* RBScreenSaverView.h */ = {isa = PBXFileReference; path = RBScreenSaverView.h; sourceTree = "<group>"; };
+		4F6EE44A15204CD6005AE064 /* RBScreenSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RBScreenSaver-Prefix.pch"; sourceTree = "<group>"; };
 		4F6EE44C15204CD6005AE064 /* RBScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBScreenSaverView.m; sourceTree = "<group>"; };
+		4F6EE45315204DE3005AE064 /* RBScreenSaverView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = RBScreenSaverView.rb; sourceTree = "<group>"; };
+		4F6EE45515205051005AE064 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		4F6EE48215206673005AE064 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4F6EE48615206BC2005AE064 /* rbscreensaver.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rbscreensaver.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6EE45715205069005AE064 /* MacRuby.framework in Frameworks */,
 				4F6EE43D15204CD6005AE064 /* Cocoa.framework in Frameworks */,
 				4F6EE43F15204CD6005AE064 /* ScreenSaver.framework in Frameworks */,
 			);
@@ -43,6 +51,8 @@
 		4F6EE42C15204CD5005AE064 = {
 			isa = PBXGroup;
 			children = (
+				4F6EE48615206BC2005AE064 /* rbscreensaver.PNG */,
+				4F6EE48215206673005AE064 /* README.md */,
 				4F6EE44415204CD6005AE064 /* RBScreenSaver */,
 				4F6EE43B15204CD6005AE064 /* Frameworks */,
 				4F6EE43A15204CD6005AE064 /* Products */,
@@ -60,6 +70,7 @@
 		4F6EE43B15204CD6005AE064 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F6EE45515205051005AE064 /* MacRuby.framework */,
 				4F6EE43C15204CD6005AE064 /* Cocoa.framework */,
 				4F6EE43E15204CD6005AE064 /* ScreenSaver.framework */,
 				4F6EE44015204CD6005AE064 /* Other Frameworks */,
@@ -80,9 +91,9 @@
 		4F6EE44415204CD6005AE064 /* RBScreenSaver */ = {
 			isa = PBXGroup;
 			children = (
-				4F6EE44B15204CD6005AE064 /* RBScreenSaverView.h */,
 				4F6EE44C15204CD6005AE064 /* RBScreenSaverView.m */,
 				4F6EE44515204CD6005AE064 /* Supporting Files */,
+				4F6EE45315204DE3005AE064 /* RBScreenSaverView.rb */,
 			);
 			path = RBScreenSaver;
 			sourceTree = "<group>";
@@ -161,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F6EE44915204CD6005AE064 /* InfoPlist.strings in Resources */,
+				4F6EE45415204DE3005AE064 /* RBScreenSaverView.rb in Resources */,
+				4F6EE48315206673005AE064 /* README.md in Resources */,
+				4F6EE48715206BC2005AE064 /* rbscreensaver.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +263,7 @@
 		4F6EE45115204CD6005AE064 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBScreenSaver/RBScreenSaver-Prefix.pch";
 				INFOPLIST_FILE = "RBScreenSaver/RBScreenSaver-Info.plist";
@@ -261,6 +276,7 @@
 		4F6EE45215204CD6005AE064 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBScreenSaver/RBScreenSaver-Prefix.pch";
 				INFOPLIST_FILE = "RBScreenSaver/RBScreenSaver-Info.plist";
